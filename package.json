@@ -1,0 +1,30 @@
+{
+  "name": "storm-client",
+  "displayName": "Storm Client",
+  "description": "A simple HTTP client utility for VSCode.",
+  "version": "0.0.1",
+  "publisher": "storm",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:storm-client.open"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "storm-client.open",
+        "title": "Storm Client: Open"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
